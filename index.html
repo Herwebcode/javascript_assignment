@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript & DOM Manipulation</title>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    .highlight {
-      color: white;
-      background-color: teal;
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 10px;
       padding: 10px;
-      border-radius: 5px;
     }
   </style>
 </head>
 <body>
+  <h1 id="main-heading">Hello World!</h1>
+  <p>This is a sample paragraph.</p>
+  <button onclick="changeText()">Change Heading Text</button>
+  <button onclick="changeColor()">Change Box Color</button>
+  <button onclick="addElement()">Add Element</button>
+  <button onclick="removeElement()">Remove Element</button>
 
-  <header>
-    <h1 id="main-title">Welcome to DOM Manipulation</h1>
-  </header>
-
-  <section>
-    <p id="info-text">Click the buttons below to interact with the DOM.</p>
-  </section>
-
-  <article id="dynamic-content">
-    <p>This is a sample article content.</p>
-  </article>
-
-  <footer>
-    <button onclick="changeText()">Change Text</button>
-    <button onclick="toggleStyle()">Toggle Style</button>
-    <button onclick="addElement()">Add Element</button>
-    <button onclick="removeElement()">Remove Element</button>
-  </footer>
+  <div id="box">This is a box</div>
 
   <script src="script.js"></script>
 </body>
